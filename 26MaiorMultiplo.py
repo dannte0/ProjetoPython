@@ -4,8 +4,6 @@ valor1: int = 0
 valor2: int = 0
 
 #Início.
-valor1 = int(input("Digite o primeiro valor"))
-valor2 = int(input("Digite o segundo valor"))
 
 if(valor1 > valor2):
     if(valor1 % valor2 == 0):
@@ -22,4 +20,8 @@ elif(valor2 > valor1):
 else:
     print("Os valores sao iguais.")
 
+def main():
+    valor1 = int(input("Digite o primeiro valor"))
+    valor2 = int(input("Digite o segundo valor"))
+    
 #Fim.

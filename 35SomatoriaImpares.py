@@ -1,4 +1,4 @@
-#Algotimo ESTREP_LT01_3
+#Algotimo ESTREP_LT01_35
 #Declarar.
 n1: int = 0
 n2: int = 0
