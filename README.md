@@ -1,7 +1,11 @@
+
 Author: Danilo da Silva
 
-Introdução Python para SO Sistemas Operacionais
 Prof. Leandro Colevati FATEC ZL
+
+**Exercícios (Cedidos gentilmente pelo Prof. Ricardo Satoshi)**
+
+## Introdução Python para SO Sistemas Operacionais
 
 1. Coletar o valor do lado de um quadrado, calcular sua área e apresentar o resultado.
 2. Receba o salário de um funcionário e mostre o novo salário com reajuste de 15%.
@@ -31,8 +35,7 @@ no Salário Líquido. Exiba o salário a receber.
 17. Calcule a quantidade de litros gastos em uma viagem, sabendo que o automóvel faz 12 km/l.
 Receber o tempo de percurso e a velocidade média.
 
-Python para SO – Condicional e Repetição Sistemas Operacionais
-Prof. Leandro Colevati FATEC ZL
+## Python para SO – Condicional e Repetição Sistemas Operacionais
 
 18. Receba 2 valores inteiros. Calcule e mostre o resultado da diferença do maior pelo menos
 valor.
@@ -56,14 +59,20 @@ terminar noutro.
 (minutos). Calcule e mostre a velocidade média em km/h.
 28. Receba o preço atual e a média mensal de um produto. Calcule e mostre o novo preço
 sabendo que:
-Venda Mensal Preço Atual Preço Novo
-< 500 < 30.00 + 10%
->= 500 e < 1000 >= 30.00 e < 80.00 + 15%
->= 1000 >= 80.00 - 5%
-Obs.: para outras condições, preço novo será igual ao preço atual.
+
+|Venda Mensal        |Preço Atual         |Preço Novo |
+|:------------------:|:------------------:|:---------:|
+|    < 500           |    < 30            |   + 10%   |
+|    >= 500  < 1000  |    >= 30 e < 80    |   + 15%   |
+|    >= 1000         |    >=80            |   - 5%    |
+
+Obs.: para outras condições, preço novo será igual ao preço atual. 
+
 29. Receba o tipo de investimento (1 = poupança e 2 = renda fixa) e o valor do investimento.
-Calcule e mostre o valor corrigido em 30 dias sabendo que a poupança = 3% e a renda fixa = 5%.
-Demais tipos não serão considerados.
+Calcule e mostre o valor corrigido em 30 dias sabendo que a poupança = 3% e a renda fixa = 5%. Demais tipos não serão considerados.
+
+30. **Receba a data de nascimento e atual em ano, mês e dia. Calcule e mostre a idade em anos, meses e dias, considerando os anos bissextos. (!)** 
+
 31. Calcule e mostre o quadrado dos números entre 10 e 150.
 32. Receba um número inteiro. Calcule e mostre o seu fatorial.
 33. Receba um número. Calcule e mostre a série 1 + 1/2 + 1/3 + ... + 1/N.
@@ -85,3 +94,18 @@ eles.
 sabendo que Ana tem 1,10 m e cresce 3 cm ao ano e Maria tem 1,5 m e cresce 2 cm ao ano.
 44. Receba o número da base e do expoente. Calcule e mostre o valor da potência.
 45. Calcule e mostre a série 1 – 2/4 + 3/9 – 4/16 + 5/25 - ... + 15/225
+
+
+
+## Modularização
+
+Refazer os exercícios do 18 ao 26 com procedimentos (Sem retorno) em Python SEM
+PASSAGEM DE PARÃMETROS (Com variáveis globais). Os exercícios devem ser
+organizados com chamada de main para a parte principal do código e a modularização.
+
+
+Refazer os exercícios do 27 ao 29 com procedimentos em Python COM PASSAGEM DE
+PARÃMETROS (Com variáveis locais). Os exercícios devem ser organizados com chamada
+de main para a parte principal do código e a modularização.
+
+---
