@@ -36,6 +36,7 @@ def grava(c, rslt):
     enc: str = ''
     linha: str = '' 
     linha = str(rslt) + '\n'
+    os.makedirs(dir, exist_ok=True)
     os.chmod(dir, 0o744)
     if(os.path.exists(dir) and os.path.isdir(dir)):
         tipo = 'w'

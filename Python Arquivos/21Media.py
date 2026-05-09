@@ -42,6 +42,7 @@ def cadastro(nm, nt1, nt2, nt3, nt4, vlr_med):
     dir = '/tmp/exercicios/'
     arq = 'ex21.txt'
     linha = (f"Nome: {nm} : Nota 1: {str(nt1)} ; Nota 2: {str(nt2)} ; Nota 3: {str(nt3)} ; Nota 4: {str(nt4)} ; Media final: {str(vlr_med)}\n")
+    os.makedirs(dir, exist_ok=True)
     os.chmod(dir, 0o744)
     escreveArq(dir, arq, linha)
 
