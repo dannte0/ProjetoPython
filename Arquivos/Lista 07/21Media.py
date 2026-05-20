@@ -1,5 +1,4 @@
-#Algoritmo MODARQ_PYTHON_21
-#Declarar.
+#07 - Python Arquivos
 import os
 nome: str = ''
 nota1: float = 0.0
@@ -10,8 +9,7 @@ valor_media: float = 0.0
 dir: str = ''
 arq: str = ''
 
-#Inicio.
-#Recebe os valores
+
 def entrada():
     global nome
     global nota1
@@ -28,13 +26,11 @@ def entrada():
     print(valor_media)
     cadastro(nome, nota1, nota2, nota3, nota4, valor_media)
         
-#Calcula a media
 def med(n1, n2, n3 ,n4):
     media: float = 0.0
     media = (n1 + n2 + n3 + n4) / 4
     return media
 
-#Registra a linha
 def cadastro(nm, nt1, nt2, nt3, nt4, vlr_med):
     linha: str = ''
     global dir
@@ -46,7 +42,6 @@ def cadastro(nm, nt1, nt2, nt3, nt4, vlr_med):
     os.chmod(dir, 0o744)
     escreveArq(dir, arq, linha)
 
-#Adiciona a linha ao arquivo txt
 def escreveArq(caminho, arquivo, linha_arq):
     file: str = ''
     tipo: str = ''
@@ -62,15 +57,11 @@ def escreveArq(caminho, arquivo, linha_arq):
     else:
         print("Diretorio invalido.")
 
-#Modulo principal
 def main():
     contador = 0
     while(contador < 2):
         entrada()
         contador += 1
 
-#Chama modulo principal
 if(__name__ == '__main__'):
     main()
-    
-#Fim.

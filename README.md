@@ -182,3 +182,107 @@ para inteiro, verificar se o número é múltiplo de 5 e, se for, gravar em outr
 ### 5. Resolver o exercício 36:
 
  Modularizando a operações. Deve- se ter uma função que calcule e retorne o fatorial de um número, pra função que calcule e retorne a divisão. Deve-se fazer um procedimento que grave cada termo do somatório num arquivo e, por fim, o resultado final.
+
+### 6. Resolver o exercício 31
+#### 'Calcule e mostre o quadrado dos números entre 10 e 150.'
+
+Gravando todos os valores num arquivo. Deve-se fazer um procedimento
+para gravação e caso o arquivo já exista, ele deve ser descartado e gravado do início novamente.
+
+### 7. Resolver o exercício 37
+#### ' Receba um número inteiro. Calcule e mostre a série de Fibonacci até o seu N’nésimo termo.'
+
+Gravando todos os valores num arquivo. Deve-se fazer um procedimento
+para gravação, sendo que, o arquivo deve ser atualizado a cada termo gerado. Na gravação do
+primeiro termo, deve-se fazer uma verificação, caso o arquivo já exista, ele deve ser descartado e
+gravado do início novamente.
+
+### 8.  Em complemento ao enunciado anterior
+Fazer uma aplicação Python, que leia o arquivo com os
+termos da série de Fibonacci e imprima na tela só os números ímpares. A aplicação deve ter um
+procedimento de leitura, uma função que valide se o número é ímpar e retorne o número para ser
+impresso. Caso não seja ímpar, a função deve retornar -1, que não deve ser impresso em console.
+
+---
+
+## Vetores e Processos
+
+### Parte 1
+1. Criar e coletar um vetor [50] inteiro. Calcular e exibir:
+- **a.** A média dos valores entre 10 e 200;
+- **b.** A soma dos números ímpares.
+2. Criar e coletar um vetor [100] inteiro e exibir:
+- **a.** O maior e o menor valor;
+- **b.** A média dos valores.
+4. Criar e coletar em um vetor [30] real e calcular e exibir:
+- **a.** A média do grupo;
+- **b.** A quantidade de notas acima do grupo;
+- **c.** As posições dos valores abaixo da média do grupo.
+
+### Parte 2
+1. Fazer um Python um processo que tenha uma função que retorne o nome do SO. A mesma
+aplicação deve ter um procedimento que chame a saída da função de nome de SO e, dependendo do SO (Linux ou Windows) faça a leitura da saída da função PING (parte dela muda
+dependendo do SO) e exiba apenas a média de PING que é exibido na última linha do processo.
+(No Windows a saída deve ser Mdia = XXX ms e no Linux a saída deve ser avg separardo por /).
+Usar o split para que a saída seja o valor e milissegundos.
+Processo de chamada de PING com 10 iterações, em IPv4 para  www.google.com.br
+
+---
+```
+Windows: ping -4 -n 10 www.google.com.br
+```
+```
+Linux: ping -4 -c 10 www.google.com.br
+```
+2. Fazer em Python uma aplicação que liste os processos ativos, permita ao usuário entrar com o
+nome ou o PID do processo e o mate.
+A aplicação deverá funcionar, minimamente em Windows e Linux.
+É notório que cada SO tem comandos diferentes para as ações supracitadas, portanto:
+A main deve possibilitar o usuário a entrar com 4 valores 
+    ##### 1 -  para listar os processos;
+    ##### 2 - para matar por PID;
+    ##### 3 - para matar por nome;
+    ##### 9- para encerrar a aplicação.
+- ***1)*** deve haver uma função chamada os, que identifica e retorna o nome do Sistema Operacional
+
+- ***2)*** Deve haver um procedimento que permita chamar processos filhos e executá-los, de acordo
+com o SO.
+Depois de escolher a opção, se for a opção 1, já deve-se exibir os processos ativos, senão, se for
+a opção 2, na main deve-se pedir o PID do processo a se matar e passar como parâmetro para a
+função que chama processo filho, senão, se for a opção 3, na main deve-se pedir o nome do
+processo a se matar e passar como parâmetro para a função que chama processo filho.
+
+
+---
+## Threads
+
+1. Fazer uma aplicação que rode 5 Threads que cada uma delas receba um inteiro chamado id como parâmetro e imprima no console o texto “Thread #” + id. Antes de imprimir o valor, deve-
+se fazer um sleep de 0.5 segundos.
+
+2. Fazer uma aplicação que, na main, inicialize uma variável id, inteira e inicialize 5 variáveis
+inteiras para valores, crie um vetor de parâmetros, com o id como primeiro parâmetro e um
+vetor com os 5 valores recebidos. As variáveis que recebem os valores devem receber, cada
+uma delas, um valor aleatório de 1 a 100. Esses parâmetros devem ser preenchidos para 3
+chamadas de Threads. Faça 3 chamadas de Threads, passando os parâmetros e, cada Thread,
+deve calcular a soma de cada linha (Cada iteração do laço, para a soma deve ser seguido por
+um sleep de 0.2 segundos), ao final, deve-se imprimir a identificação da linha e o resultado da
+soma.
+
+3. Fazer uma aplicação de uma corrida de sapos, com 5 Threads, cada Thread controlando 1
+sapo. Deve haver um tamanho máximo para cada pulo do sapo (em centímetros) e a distância
+máxima para que os sapos percorram. A cada salto, um sapo pode dar um salto de 0 até o
+tamanho máximo do salto (valor aleatório entre 1 e 5 cm.). Após dar um salto, a Thread, para
+cada sapo, deve mostrar no console, qual foi o tamanho do salto e quanto o sapo percorreu.
+Assim que o sapo percorrer a distância máxima, a Thread deve apresentar que o sapo chegou.
+Dica: O exercício deve ser resolvido todo em console, ou seja, como se estivesse sendo
+narrado.
+
+4. No Sistema Operacional Linux, o comando para realizar uma operação de ping com 10
+iterações é ping -4 -c 10 <servidor> e no Sistema Operacional Windows, o comando para a
+mesma função é ping -4 -n 10 <servidor>. Fazer uma aplicação Python que rode 3 Threads,
+sendo que a Thread deve identificar o SO para rodar o comando certo, fazendo operação de
+ping para os servidores UOL (www.uol.com.br), Terra (www.terra.com.br) e Google
+(www.google.com.br). Cada thread deve ler a saída do ping imprimindo, a cada iteração, o
+nome do servidor (usar fixo: UOL, Terra ou Google) e o tempo daquela iteração. Ao fim, deve-
+se exibir o nome do servidor (usar fixo: UOL, Terra ou Google) e o tempo médio obtido pela
+operação. Outros Sistemas Operacionais devem ser descartados.

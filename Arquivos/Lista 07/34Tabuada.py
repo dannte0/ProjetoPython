@@ -1,11 +1,9 @@
-#Algoritmo MODARQ_PYTHON_34
-#Declarar.
+#07 - Python Arquivos
 import os
 valor: int = 0
 dir: str = ''
 arq: str = ''
 
-#Inicio.
 def main():
     global valor
     contador: int = 0
@@ -20,12 +18,10 @@ def main():
         print(f"{valor} * {contador} = {result}")
         grava(contador, result)
 
-#Multiplica valores
 def mult(vlr, tab):
     res = vlr * tab
     return res
 
-#Grava no arquivo txt
 def grava(c, rslt):
     global dir
     global arq
@@ -49,8 +45,5 @@ def grava(c, rslt):
     else:
         print("Diretorio invalido.")
 
-#Chama modulo principal
 if(__name__ == '__main__'):
     main()
-
-#Fim.
